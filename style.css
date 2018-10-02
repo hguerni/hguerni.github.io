@@ -1,13 +1,158 @@
-body
-{
-margin:40px auto;
-max-width:650px;
-line-height:1.6;
-font-size:18px;
-color:#444;
+/*Tout les éléments à zéro */
+* {
+	margin : 0;
+	padding : 0;
 }
 
-h1,h2,h3
-{
-line-height:1.2
+/*On setup le corps de la page*/
+body{
+	font-family: Arial;
+	height: 100%;
 }
+
+/* Texte *Gmail+Image* en haut à gauche */
+.TexteIcones {
+	text-decoration: none;
+	color: white;
+  padding: 12px;
+  font-size: 14px;
+  display: flex;
+	justify-content: flex-end;
+}
+
+/*On configure les liens pour qu'ils soient pas tout moches et bleus*/
+a{
+	color: black;
+	text-decoration: none;
+}
+	/* Souligner les mots précédents quand on passe dessus*/
+a:hover {
+		text-decoration: underline;
+}
+
+
+  /*Bouton "connexion"*/
+.bouton2 {
+	padding: 10px;
+	font:bold 14px Arial;
+	background:#478bf9;
+	color: white;
+	text-decoration: none;
+	border-radius:2px;
+	border:none;
+}
+
+	/* Réglages des mots (et des icônes) sur la page marqués par span*/
+
+/* On définit les paramètres du logo google*/
+#logoGoogle {
+	margin: auto;
+	padding-top: 200px;
+	padding-bottom: 20px;
+	text-align: center;
+  display: block;
+}
+	/* On définit les paramètres du container qui comprend la SearchBar et les boutons*/
+
+	#container {
+		padding: 10px;
+		margin: auto;
+		width: 1000px;
+		height: 80px;
+	}
+	/* On définit les paramètres la SearchBar dans le container*/
+	#search {
+		margin :auto;
+		padding: 10px;
+		text-align: center;
+		width: 600px;
+		height: 50px;
+	}
+
+/*On fait un input pas trop moche*/
+	input{
+		margin :auto;
+		padding: 10px;
+		text-align: left;
+		font-size: 20px;
+		width: 564px;
+		height: 20px;
+		border-style: solid;
+		box-shadow: 0px 1px lightgrey;
+		border-radius: 2px;
+	}
+
+	input:active{
+		box-shadow: 0px 3px 5px 1px lightgrey;
+	}
+
+	input:hover{
+		box-shadow: 0px 3px 5px 1px lightgrey;
+		border-bottom: 1px grey;
+	}
+
+/*Paramétrages des trois boutons*/
+.boutons {
+	margin: auto;
+	width: 400px;
+	height: 200px;
+	text-align: center;
+}
+
+	/* Deux boutons en dessous de la barre de recherche */
+	button {
+		padding: 11px;
+		margin: 5px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-style: none;
+		font-size: small;
+		font-family: Arial;
+		font-weight: bold;
+		color: grey;
+	}
+
+	button:hover{
+		border: 1px solid lightgrey;
+		color: black;
+		background-color: whitesmoke;
+	}
+
+	/* Bas de la page*/
+	footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background:#f2f2f2;left:0;right:0;
+	}
+
+	.yenamarre{
+		font-size: small;
+		padding: 15px;
+	}
+
+	/* Contenu du bas de la page (texte à gauche et à droite)*/
+	.BasDePage {
+		padding-left: 15px;
+		color: grey;
+}
+
+	/* Contenu des metions */
+	#Mentions {
+		display: flex;
+		justify-content: space-between;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: small;
+		border-top: 1px solid lightgrey ;
+		padding: 15px;
+	}
+		/* Texte en bas à droite */
+		#BasDePageDroite {
+			font-family: Arial, Helvetica, sans-serif;
+
+	}
+		/* Texte en bas à gauche*/
+		#BasDePageGauche {
+			font-family: Arial, Helvetica, sans-serif;
+
+	}
