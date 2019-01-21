@@ -1,67 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>googlelike</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <div class="TexteIcones">
-      <a href="https://www.google.com/intl/fr/gmail/about/" style="margin: 10px">Gmail</a><a href="https://www.google.fr/imghp?hl=fr&tab=wi" style="margin: 10px">Images</a>
-        <a href="https://www.google.fr/intl/fr/options/" style="margin-left: 10px; margin-top: 5px; padding-right: 10px "><img src="LOL.jpg" title="Applications Google"/></a>  <span class="bouton2"><a href="https://accounts.google.com/ServiceLogin?hl=fr&passive=true&continue=https://www.google.fr/" style="color: white; text-decoration: none; font-weight: bold" >Connexion</a></span>
-    </div>
-    <div id="logoGoogle">
-       <img src="google.jpg"/>
-    </div>
-    <div id="container">
-      <form action="https://google.com/search" method="get" style="text-align: center">
-      <input type="text" name="q" title="Rechercher"/>
-      <div class="boutons">
-        <button type="submit" name="search"> Recherche Google </button>
-        <button type="submit" name="luckysearch"> J'ai de la chance </button>
-      </div>
-      </form>
-    </div>
-    <footer>
+<script type="text/javascript">
 
-        <div  class="BasDePage">
+var urls = new Array();
+urls[0] = "http://learninginhand.com";
+urls[1] = "http://learninginhand.com/about";
+urls[2] = "http://learninginhand.com/contact";
+urls[4] = "http://learninginhand.com/services";
+urls[5] = "http://learninginhand.com/videos";
+urls[6] = "http://learninginhand.com/infographics";
+urls[7] = "http://learninginhand.com/resources";
+urls[8] = "http://learninginhand.com/stickaround";
+urls[9] = "http://learninginhand.com/posts";
+urls[10] = "http://learninginhand.com/pet";
 
-            <p class="yenamarre">France</p>
-        </div>
-        <div class="BasDepage">
+var random = Math.floor(Math.random()*urls.length);
 
-            <div id="Mentions">
+window.location = urls[random];
 
-                <div id="BasDePageGauche">
-
-                    <a href="https://www.google.com/intl/fr_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" style="color: grey; font-size: small; padding: 15px";>Publicité
-                    <a/>
-
-                    <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" style="color: grey; font-size: small; padding: 15px";>Entreprise
-                    </a>
-
-                    <a href="https://www.google.com/intl/fr_fr/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1"style="color: grey; font-size: small; padding: 15px";>À propos
-                    </a>
-
-                </div>
-
-                <div id ="BasDePageDroite">
-
-                        <a href="//support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1" style="color: grey; font-size: small; padding: 15px";>Info consommateurs
-                        </a>
-
-                        <a href="//www.google.com/intl/fr_fr/policies/privacy/?fg=1" style="color: grey; font-size: small; padding: 15px";>Confidentialité
-                        </a>
-
-                        <a href="//www.google.com/intl/fr_fr/policies/terms/?fg=1" style="color: grey; font-size: small; padding: 15px";>Conditions
-                        </a>
-
-                        <a href="https://www.google.com/preferences?hl=fr" style="color: grey; font-size: small; padding: 15px";> Paramètres
-                        </a>
-
-                    </div>
-            </div>
-        <div/>
-    <footer>
-</body>
-</html>
+</script>
