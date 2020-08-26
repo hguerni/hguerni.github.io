@@ -25,7 +25,7 @@ VUES PRISES EN 2003-2006<br>
       <br>
       </div>
       </td>
-      <td style="vertical-align: top;"><img style="width: 341px; height: 268px;" alt="" src="http://www.vieilleseglisesjuaye.fr/photos_pour_visite/interieur-100_0031.JPG"><br>
+      <td style="vertical-align: top;"><img id="imgClickAndChange2" onclick="changeImage2()" style="width: 341px; height: 268px;" alt="" src="http://www.vieilleseglisesjuaye.fr/photos_pour_visite/interieur-100_0031.JPG"><br>
       </td>
     </tr>
     <tr>
@@ -38,7 +38,7 @@ corps repose au cimetière Jérusalem à Chouain.<br>
       <br>
       <br>
       </td>
-      <td style="vertical-align: top;"><img style="width: 417px; height: 278px;" alt="" src="http://www.vieilleseglisesjuaye.fr/photos_pour_visite/choeur%20sud-n%C2%B0%20029.jpg"></td>
+      <td style="vertical-align: top;"><img id="imgClickAndChange3" onclick="changeImage3()" style="width: 417px; height: 278px;" alt="" src="http://www.vieilleseglisesjuaye.fr/photos_pour_visite/choeur%20sud-n%C2%B0%20029.jpg"></td>
       <td style="vertical-align: top;"><br>
       <br>
       <br>
@@ -47,24 +47,67 @@ Sur la façade sud on peut voir 2 têtes de personnages sculptées<br>
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: middle; text-align: center;"><img style="width: 245px; height: 368px;" alt="" src="http://www.vieilleseglisesjuaye.fr/photos_pour_visite/sacristie-n%C2%B0%20030.jpg"><br>
+      <td style="vertical-align: middle; text-align: center;"><img id="imgClickAndChange4" onclick="changeImage4()" style="width: 245px; height: 368px;" alt="" src="http://www.vieilleseglisesjuaye.fr/photos_pour_visite/sacristie-n%C2%B0%20030.jpg"><br>
 Sacristie<br>
       </td>
       <td style="vertical-align: top; text-align: center;"><big><big><br>
       <br>
       <a href="index.html">Voir le site complet de l'AVEJM</a><br>
       </big></big></td>
-      <td style="vertical-align: top;"><img id="imgClickAndChange" onclick="changeImage()" style="width: 406px; height: 334px;" alt="" src="http://www.vieilleseglisesjuaye.fr/photos_pour_visite/porche%20nord%20avt.jpg"><script language="javascript">
+      <td style="vertical-align: top;"><img id="imgClickAndChange5" onclick="changeImage5()" style="width: 406px; height: 334px;" alt="" src="http://www.vieilleseglisesjuaye.fr/photos_pour_visite/porche%20nord%20avt.jpg"><script language="javascript">
 	
     function changeImage() {
 
-        if (document.getElementById("imgClickAndChange").src == "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/porche%20nord%20avt.jpg") 
+        if (document.getElementById("imgClickAndChange").src == "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/bazile_av.JPG") 
         {
             document.getElementById("imgClickAndChange").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/interieur-100_0031.JPG";
         }
         else
         {
-            document.getElementById("imgClickAndChange").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/porche%20nord%20avt.jpg";
+            document.getElementById("imgClickAndChange").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/bazile_av.JPG";
+        }
+    }
+    function changeImage2() {
+
+        if (document.getElementById("imgClickAndChange2").src == "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/porche%20nord%20avt.jpg") 
+        {
+            document.getElementById("imgClickAndChange2").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/interieur-100_0031.JPG";
+        }
+        else
+        {
+            document.getElementById("imgClickAndChange2").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/porche%20nord%20avt.jpg";
+        }
+    }
+    function changeImage3() {
+
+        if (document.getElementById("imgClickAndChange3").src == "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/choeur%20sud-n%C2%B0%20029.jpg") 
+        {
+            document.getElementById("imgClickAndChange3").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/interieur-100_0031.JPG";
+        }
+        else
+        {
+            document.getElementById("imgClickAndChange3").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/choeur%20sud-n%C2%B0%20029.jpg";
+        }
+    function changeImage4() {
+
+        if (document.getElementById("imgClickAndChange4").src == "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/sacristie-n%C2%B0%20030.jpg") 
+        {
+            document.getElementById("imgClickAndChange4").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/interieur-100_0031.JPG";
+        }
+        else
+        {
+            document.getElementById("imgClickAndChange4").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/sacristie-n%C2%B0%20030.jpg";
+        }
+    }
+    function changeImage5() {
+
+        if (document.getElementById("imgClickAndChange5").src == "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/porche%20nord%20avt.jpg") 
+        {
+            document.getElementById("imgClickAndChange5").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/interieur-100_0031.JPG";
+        }
+        else
+        {
+            document.getElementById("imgClickAndChange5").src = "http://www.vieilleseglisesjuaye.fr/photos_pour_visite/porche%20nord%20avt.jpg";
         }
     }
 	</script><br>
